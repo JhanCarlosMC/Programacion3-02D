@@ -34,7 +34,7 @@ defmodule UtilTest do
   end
 
   #Input con manejo de errores usando try-rescue
-  def input(message, :integer, :try) do
+  def input(message, :integer) do
     try do
       message
       |> input(:string)
