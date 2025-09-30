@@ -13,7 +13,7 @@ defmodule Main do
 
     v1 = %Venta{cliente: c1, detalles: [d1, d2, d3]}
 
-    v1.calcular_total()
+    Venta.calcular_total(v1) |> IO.inspect(label: "Total Venta")
 
   end
 end
