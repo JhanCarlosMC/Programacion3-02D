@@ -7,4 +7,8 @@ defmodule Venta do
       acc + Detalle.calcular_subtotal(detalle)
     end)
   end
+
+  def crear(cliente, detalles) do
+    %Venta{cliente: cliente, detalles: detalles}
+  end
 end
