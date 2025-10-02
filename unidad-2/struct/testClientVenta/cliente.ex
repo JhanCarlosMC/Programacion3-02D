@@ -31,7 +31,8 @@ defmodule Cliente do
             _ -> nil
           end
         end)
-
+          |> Enum.filter(& &1) # Filtra nil y falsy values
+          
       {:error, reason} -> # Error al leer
         IO.puts("Error al leer el archivo: #{reason}")
         []
